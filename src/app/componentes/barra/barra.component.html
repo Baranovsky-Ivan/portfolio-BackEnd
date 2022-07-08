@@ -1,0 +1,44 @@
+<div class="card mat-card" id="first-card">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid justify-content-start">
+        <a class="navbar-brand" [href]="programList.url">
+          <img [src]="programList.img"> </a>
+        <a class="nav-link disabled">{{programList.tittle}}</a>  
+      </div>
+      <div class="d-flex justify-content-end">
+        <a class="nav-link active" aria-current="page" href="https://www.instagram.com/ivan.baranovsky/?hl=es-la">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="nav-link active" aria-current="page" href="https://www.facebook.com/ibaranovsky/">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a class="nav-link active" aria-current="page" href="https://github.com/Baranovsky-Ivan">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <div class="btn-group dropstart">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </button>
+          <form class="dropdown-menu p-4">
+            <div class="mb-3">
+              <label for="Login-username-portfolio" class="form-label">username</label>
+              <input type="username" class="form-control" id="username-portfolio" placeholder="username">
+            </div>
+            <div class="mb-3">
+              <label for="Login-password-portfolio" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password-portfolio" placeholder="Password">
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                <label class="form-check-label" for="dropdownCheck">
+                  Remember me
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-light">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</div>

@@ -1,0 +1,38 @@
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-11">
+            <h2 class="card-title">Proyectos</h2>
+        </div>
+        <div class="col-md-1">
+            <button id="btn-agregar-proyecto" href="#" class="btn btn-secondary" type="button">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+    </div>
+    <ul class="item-list">
+        <li *ngFor="let proyecto of proyectosList">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img [src]="proyecto.img" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{proyecto.name}}</h5>
+                        <p class="card-text">{{proyecto.description}}</p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <button id="btn-edit-progreso" href="#" class="btn btn-secondary" type="button">
+                        <i class="far fa-edit"></i>
+                    </button>
+                    <button id="btn-quitar-progreso" href="#" class="btn btn-secondary" type="button">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="btn-link">
+                    <a [href]="proyecto.url" class="btn btn-dark">Ver Pagina Web</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

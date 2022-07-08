@@ -1,0 +1,138 @@
+.card{
+    border: 2px solid rgb(63, 63, 63);
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.navbar > div {
+    background: rgb(0, 0, 0);
+}
+.navbar {
+    padding: 0;
+    flex-wrap: nowrap;
+}
+.container-fluid a img{
+    height: 1.70rem;
+}
+.container-fluid{
+    color: rgb(255, 255, 255);
+}
+.justify-content-end a i{
+    padding: 0 5px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.justify-content-end a i:hover{
+    transform: scale(2);
+}
+.justify-content-end a .fab.fa-instagram:hover {
+    color: #e4405f;
+}
+.justify-content-end a .fab.fa-facebook-square:hover{
+    color: #3b5999;
+}
+.justify-content-end a .fa-brands.fa-github:hover{
+    color: #535353;
+}
+.justify-content-end ul li a{
+    color: #000000;
+}
+.nav-link{
+    padding: 0.5rem 0.3rem;
+}
+.dropstart .dropdown-menu[data-bs-popper]{
+    background-color:rgb(109, 109, 109);
+    right: 0rem;
+    left: -25rem;
+}
+img{
+    height: 300px;
+}
+.card-img-overlay{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+img#image-profile{
+    width: 200px;
+    height: 200px; 
+    margin-top: -110px;
+    margin-left: 50px;
+}
+.camera{
+    margin-left: 13rem;
+    margin-right: 30rem;
+    margin-top: -60px;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    z-index: auto;
+}
+.fa-camera:before {
+    font-size: xx-large;
+}
+button#btn-info-resumida-agregar{
+    margin-bottom: 6rem;
+    margin-right: 0.3rem;
+}
+button#btn-info-resumida-quitar{
+    margin-bottom: 6rem;
+    margin-right: 0.3rem;
+}
+button#btn-eliminar-plantilla{
+    margin-left: 0.3rem;
+    margin-block-end: -0.8rem;
+}
+button#btn-agregar-plantilla{
+    margin-block-end: -0.8rem;
+}
+.row.g-0 {
+    padding: 1rem;
+}
+img.img-fluid.rounded-start {
+    height: 150px;
+    padding-bottom: 1rem;
+}
+.card-body {
+    margin-top: 1rem;
+}
+ul{
+    list-style: none;
+}
+.list-info{
+    margin-top: 2rem;
+}
+button#btn-edit-estudio{
+    margin-right: 0.3rem;
+}
+img.img-fluid.rounded-start.padre-monti{
+    height: 200px;
+}
+.progress{
+    margin-top: 4rem;
+    height: 2rem;
+}
+.progress-bar.progress-bar-striped {
+    background-color: #ff7600;
+}
+.progress-bar.progress-bar-striped.purple {
+    background-color: #56026bf8;
+}
+.progress-bar.progress-bar-striped.blue {
+    background-color: #0000ff;
+}
+button#btn-edit-progreso{
+    margin-right: 0.3rem;
+}
+div#nombre-progreso{
+    padding-top: 2.7rem;
+}
+button#btn-edit-proyecto{
+    margin-right: 0.3rem;
+}
+.btn-link{
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}

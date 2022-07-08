@@ -1,0 +1,87 @@
+{
+    "program": {
+        "name": "Argentina Programa",
+        "img": "../../assets/argprograma.jpg",
+        "url": "https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa",
+        "tittle": "#YoProgramo"
+    },
+    "redes": {
+        "instagram": "https://www.instagram.com/ivan.baranovsky/?hl=es-la",
+        "facebook": "https://www.facebook.com/ibaranovsky/",
+        "github": "https://github.com/Baranovsky-Ivan"
+    },
+    "backImage": "../../assets/software-banner.jpg",
+    "image": "../Foto-perfil 1.jpg",
+    "name": "Iván Baranovsky",
+    "position": "Full Stack Developer Jr",
+    "info": "Recientemente termine el curso YO PROGRAMO de ARGENTINA PROGRAMA en el cual hice mis primeros pasos en la programacion. En estos momentos estoy desarrollando mis habilidades de forma autodidacta.",
+    "edad": "Tengo 27 años y vivo en la provincia de Santa Fe, Argentina.",
+    "education": [{
+            "school": "Argentina Programa",
+            "title": "Full Stack Developer Jr",
+            "img": "../../assets/argentinaprograma2.png",
+            "carerr": "Argentina Programa - #YoProgramo",
+            "start": "2021",
+            "end": "2022"
+        },
+        {
+            "school": "Argentina Programa",
+            "title": "Primera etapa del plan Argentina Programa",
+            "img": "../../assets/argentinaprograma2.png",
+            "carerr": "Argentina Programa - #SéProgramar",
+            "start": "2021",
+            "end": "2021"
+        },
+        {
+            "school": "Escuela Part. Inc. Nro 3028 Padre Luis María Monti. Santa Fe, La Capital.",
+            "title": "Educacion Secundaria",
+            "img": "../../assets/padre-monti.png",
+            "carerr": "Educacion Polimodal, Modalidad Economia y Gestion de las Organizaciones.",
+            "start": "2007",
+            "end": "2011"
+        }
+    ],
+    "aptitude": [{
+            "name": "HTML5",
+            "img": "https://img.icons8.com/color/480/000000/html-5--v1.png",
+            "progress": "100%"
+        },
+        {
+            "name": "CSS3",
+            "img": "https://img.icons8.com/color/480/000000/css3.png",
+            "progress": "100%"
+        },
+        {
+            "name": "JAVASCRIPT",
+            "img": "https://img.icons8.com/color/480/000000/javascript--v1.png",
+            "progress": "100%"
+        },
+        {
+            "name": "ANGULAR",
+            "img": "https://img.icons8.com/color/480/000000/angularjs.png",
+            "progress": "100%"
+        },
+        {
+            "name": "BOOTSTRAP",
+            "img": "https://img.icons8.com/color/480/000000/bootstrap.png",
+            "progress": "100%"
+        },
+        {
+            "name": "MySQL",
+            "img": "https://img.icons8.com/ios/500/000000/mysql-logo.png",
+            "progress": "100%"
+        },
+        {
+            "name": "JAVA",
+            "img": "https://img.icons8.com/color/480/000000/java-coffee-cup-logo--v1.png",
+            "progress": "100%"
+        }
+    ],
+    "proyects": [{
+            "name": "Mi Portfolio",
+            "img": "../../assets/imagen-Portfolio.png",
+            "description": "Pagina web la cual muestra informacion actualizada sobre mis estudios, cursos de programacion, habilidades aprendidas y proyectos. Desarrollado con HTML, CSS, JS, Angular.",
+            "url": "#"
+        }
+    ]
+}
