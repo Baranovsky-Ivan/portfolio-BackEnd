@@ -1,37 +1,38 @@
 <div class="card bg-secondary mb-1">
   <div class="row profile-picture">
-    <div class="image-profile">
-      <img id="image-profile" src="../assets/Foto-perfil 1.jpg" alt="" class="border border-white border-3 rounded-circle" >
-      <div class="d-grid gap-2 d-md-block">
-        <button class="camera btn btn-black" type="button"><i class="fas fa-camera"></i></button>
+    <div class="image-profile" *ngFor="let Persona of pers">
+      <img id="image-profile" src="{{Persona.img}}" alt="" class="border border-white border-3 rounded-circle" >
+      <div class="d-grid gap-2 d-md-block" *ngIf="isLogged">
+        <button class="camera btn btn-black" routerLink="/editimg/{{Persona.id}}" type="button"><i class="fas fa-camera"></i></button>
       </div>
     </div>
   </div>
-  <div class="row row-cols-1 row-cols-md-2 g-3">
-    <div class="col-md-5">
-      <div class="card text-center bg-secondary">
-        <p id=""nombre>{{persona.nombre}}</p>
-        <h3>{{persona.apellido}}</h3>
-        <div class="card-img-overlay">
-          <button id="btn-edit-personal" href="#" class="btn btn-light" type="button">
+  <ul class="item-list" >
+    <li *ngFor="let Persona of pers">
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col-md-5">
+      <div class="card text-center bg-secondary" >
+        <h3><p id="nombre">{{Persona.nombre}} {{Persona.apellido}}</p></h3>
+        <h3>{{Persona.titulo}}</h3>
+        <div class="card-img-overlay" *ngIf="isLogged">
+          <button routerLink="/editper/{{Persona.id}}" class="btn btn-light" type="button">
             <i class="far fa-edit"></i>
           </button>
         </div>
       </div>
-    </div> 
-    <div class="col-md-7">
-      <div class="card text-left bg-secondary ">
-        <h2>Informacion resumida</h2>
-        <h5><p></p></h5>
+        </div> 
+        <div class="col-md-7">
+          <div class="card text-left bg-secondary ">
+            <h2>Informacion resumida</h2>
+            <div class="card-img-overlay" *ngIf="isLogged">
+              <button id="btn-info-resumida-quitar" routerLink="/editinfo/{{Persona.id}}" class="btn btn-light" type="button">
+                <i class="far fa-edit"></i>
+              </button>
+            </div>
+            <h5>{{Persona.info}}</h5>
+          </div>
+        </div>
       </div>
-      <div class="card-img-overlay">
-        <button id="btn-info-resumida-quitar" href="#" class="btn btn-light" type="button">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <button id="btn-info-resumida-agregar" href="#" class="btn btn-light" type="button">
-          <i class="far fa-edit"></i>
-        </button>
-      </div>
-    </div>
-  </div>
+    </li>
+  </ul>
 </div>

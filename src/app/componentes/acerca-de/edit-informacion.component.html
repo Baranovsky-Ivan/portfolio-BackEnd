@@ -1,0 +1,11 @@
+<div class="container" *ngIf="personas">
+    <div class="row">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+            <div class="form-group">
+                <label for="informacion">Informacion</label>
+                <input type="text" class="form-control" id="informacion" name="informacion" [(ngModel)]="personas.info" required>
+            </div>
+            <button type="editar" class="btn btn-success">Editar informacion personal</button>
+        </form>
+    </div>
+</div>

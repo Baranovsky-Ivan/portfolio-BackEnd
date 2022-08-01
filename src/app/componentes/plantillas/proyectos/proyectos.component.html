@@ -4,33 +4,53 @@
             <h2 class="card-title">Proyectos</h2>
         </div>
         <div class="col-md-1">
-            <button id="btn-agregar-proyecto" href="#" class="btn btn-secondary" type="button">
+            <div class="btn-group dropstart">
+              <button  id="btn-nuevo-proyectos" *ngIf="isLogged" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                 <i class="fa-solid fa-plus"></i>
-            </button>
-        </div>
+              </button>
+              <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <label for="nombrePro" class="form-label">Proyectos</label>
+                  <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="nombrePro" required>
+                </div>
+                <div class="mb-3">
+                  <label for="descripcionPro" class="form-label">Descripcion</label>
+                  <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="descripcionPro" required>
+                </div>
+                <div class="mb-3">
+                  <label for="urlPro" class="form-label">Url</label>
+                  <input type="text" class="form-control" id="urlPro" name="urlPro" [(ngModel)]="urlPro">
+                </div>
+                <button type="agregar" class="btn btn-success">Agregar Proyecto</button>
+              </form>
+            </div>
+          </div>
     </div>
     <ul class="item-list">
-        <li *ngFor="let proyecto of ">
+        <li *ngFor="let Proyectos of proy">
             <div class="row g-0">
                 <div class="col-md-3">
-                    <img [src]="" class="img-fluid rounded-start" alt="...">
+                    <img src="https://bit.ly/3zLUWYj" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text"></p>
+                        <h5 class="card-title">{{Proyectos.nombrePro}}</h5>
+                        <p class="card-text">{{Proyectos.descripcionPro}}</p>
                     </div>
                 </div>
-                <div class="col-md-1">
-                    <button id="btn-edit-progreso" href="#" class="btn btn-secondary" type="button">
+                <div class="col-md-1" *ngIf="isLogged">
+                    <button id="btn-edit-progreso" routerLink="/editpro/{{Proyectos.id}}" class="btn btn-secondary" type="button">
                         <i class="far fa-edit"></i>
                     </button>
-                    <button id="btn-quitar-progreso" href="#" class="btn btn-secondary" type="button">
+                    <button id="btn-quitar-progreso" (click)="delete(Proyectos.id)" class="btn btn-secondary" type="button">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
                 <div class="btn-link">
-                    <a [href]="" class="btn btn-dark">Ver Pagina Web</a>
+                    <a href="{{Proyectos.urlPro}}" class="btn btn-dark">Ver Pagina Web</a>
+                    <script>
+                        <button> </button>
+                    </script>
                 </div>
             </div>
         </li>
